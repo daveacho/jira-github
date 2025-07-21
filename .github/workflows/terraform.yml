@@ -52,7 +52,7 @@ jobs:
           AWS_REGION: "eu-west-2"
           AWS_ROLE_ARN: "arn:aws:iam::339713055209:role/test-oidc-role"
         with:
-          role-to-assume: ${{ env.AWS_ROLE_ARN }} # Replace with your IAM role ARN
+          role-to-assume: ${{ env.AWS_ROLE_ARN }} ## Replace with your IAM role ARN
           aws-region: ${{ env.AWS_REGION }}
           role-session-name: GitHubActionsSession
 
